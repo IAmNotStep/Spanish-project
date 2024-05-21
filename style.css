@@ -1,0 +1,131 @@
+@font-face {
+    font-family: quantico;
+    src: url(assets/Quantico-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: quantico;
+    src: url(assets/Quantico-Bold.ttf);
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: quantico;
+    src: url(assets/Quantico-Italic.ttf);
+    font-style: italic;
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: inter;
+    src: url(assets/InterVariable.ttf);
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 27px; */
+    font-size: calc(0.5rem + 1vw);
+  }
+  
+  ul li {
+    display: inline;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'inter';
+    margin-left: 1em;
+  }
+  
+  a.effect {
+    background: linear-gradient(0deg, white, white) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+    padding-bottom: 2px;
+    --bg-h: 2px
+  }
+  
+  a.effect:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+  
+  .active {
+    font-family: 'inter';
+    font-weight: bold;
+  }
+  
+  #headImg {
+    width: 100%;
+  }
+  
+  #border {
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+    margin-top: calc(1.5rem + 1vw);
+    margin-bottom: calc(1rem + 1vw);
+  }
+  
+  .centerContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #indexText {
+    width: 60%;
+    font-size: 25px;
+  }
+  
+  #indexHead {
+    font-size: 35px;
+  }
+  
+  .left {
+    float: left;
+    padding-left: 5em;
+    padding-top: 5em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+  }
+  
+  .sideLeftText {
+    float: left;
+    width: 35%;
+    font-size: 25px;
+    padding-top: 3em;
+  }
+  
+  .right {
+    float: right;
+    padding-left: 5em;
+    padding-top: 5em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+  }
+  
+  .sideRightText {
+    float: right;
+    width: 35%;
+    font-size: 25px;
+    padding-top: 1em;
+  }
+  
+  .container {
+    width: 100%;
+    height: 250px;
+  }
